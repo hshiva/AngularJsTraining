@@ -1,0 +1,3 @@
+create directive for 
+
+for routing -> use=> angular 1 ui router library

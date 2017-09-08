@@ -1,0 +1,8 @@
+<div>
+    <h3>{{vm.slideshowTitle}}</h3>
+    <div>
+        <button ng-click="vm.onPrev()"><</button>
+        <img ng-click="vm.onImgClick()" ng-src="{{vm.slideData[vm.counter]}}" alt="" width="100px" height="100px">
+        <button ng-click="vm.onNext()">></button>
+    </div>
+</div>

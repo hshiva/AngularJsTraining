@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+
+<body ng-app="myapp">
+    <!-- <div id="myDiv">
+
+        <div ng-controller="MyCtrl">{{title}}
+
+            <input type="text" ng-model="title">
+            <button ng-click="onBtnClick()"> click me </button>
+        </div>
+
+    </div>  -->
+     <!-- <div style="font-family: Arial;border:3px;padding:2px;" ng-controller="MyCtrl" id="IdMyCntrl">
+        <div>
+            <input type="text" ng-model="query">
+            <button ng-click="onSearch()">search</button>
+        </div>
+        <div>
+            <label ng-if="query">keyword searched : {{query}}</label>
+            <table style="border:1px solid;padding:2px;">
+
+                <thead style="border:1px solid;padding:2px;">
+                    <tr style="border:3px;padding:2px;">
+                        <th style="border:1px solid;">Name</th>
+                        <th style="border:1px solid;">Price</th>
+                    </tr>
+                </thead>
+                <tbody style="border:1px solid;padding:2px;">
+                    <tr ng-repeat="prod in products" style="border:1px solid;padding:2px;">
+                        <td style="border:1px solid;">{{prod.name}}</td>
+                        <td style="border:1px solid;">{{prod.price|currency}}</td>
+                    </tr>
+                </tbody>
+
+                </thead>
+            </table>
+        </div>
+        <input type="text" ng-model=title>
+        <!-- <my-Custom-Tag my-title={{vm.myTitle}} my-val="title"></my-Custom-Tag> -->
+        <!-- <br/> -->
+        <!-- <label for="customSlide">customSlide Show section</label>
+        <my-slide-show on-img-click="onCatClicked()" slide-data="catData.list" slideshow-title={{catData.name}}> </my-slide-show>
+        <my-slide-show on-img-click="onDogClicked()" slide-data="dogData.list" slideshow-title={{dogData.name}}> </my-slide-show> -->
+
+    <!-- </div> -->
+
+    <!-- directive -->
+    <!-- <my-btn> </my-btn>
+    <br/> -->
+    <!-- <div my-btn></div>  -->
+    <!-- <input type="text" ng-model="vm.myTitle">
+    <br/>
+
+    <!-- slideShow directive -->
+    <!-- <my-Custom-Tag my-title={{vm.myTitle}} my-val="title"></my-Custom-Tag>
+    <span> {{'shiva'|username:'Hi'}}</span>  --> 
+    <!-- angular-ui-router -->
+
+    <div>
+        <div id="header" style="background-color: gray ">
+            <div id="logo">Logo</div>
+            <div id="navigation"></div>
+        </div>
+        <div id="content-area">
+            <ui-view>
+
+            </ui-view>
+        </div>
+    </div>
+
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui-router.js"></script>
+     <script src="Scripts/app.js"></script> 
+    <!-- <script src="Scripts/product.Service.js"></script>
+    <script src="Scripts/customBtn.directive.js"></script>
+    <script src="Scripts/mySlideShow.directive.js"></script>
+    <script src="Scripts/Custom.filter.js"></script> -->
+    <script src="Scripts/routes.js"></script>
+</body>
+
+</html>
